@@ -1,0 +1,17 @@
+body{
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #c0baba;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header{
+  width: 100%;
+  background-color: #fff;
+  margin-top: 0;
+  height: 75px;
+  display: flex;
+  align-items: center;
+
+}
