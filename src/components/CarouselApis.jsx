@@ -5,7 +5,7 @@ import jsonP from '../assets/images/json-placeholder-img.jpg';
 
 function CarouselApis() {
   return (
-    <Carousel className='w-50'>
+    <Carousel className='carouselItem' style={{width:'50%'}}>
       <Carousel.Item>
         <img
           className="d-block w-100 imgApiItem"
