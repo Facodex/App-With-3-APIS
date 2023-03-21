@@ -8,7 +8,7 @@ export const Header = () => {
     // cuando quiera que un enlace aparezca activo le puedo pasar por clase "active" 
     return (
         <>
-            <nav className="navbar navbar-expand-lg bg-light">
+            <nav className="navbar navbar-expand-lg bg-light px-5">
                 <div className="container-fluid">
                     <Link className="navbar-brand text-primary" to='/'><GiStrongMan style={{fontSize:'2em'}}/>App3Apis</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,13 +17,13 @@ export const Header = () => {
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <Link className="nav-link" aria-current="page" to='/pokeapi'>PokeApi</Link>
+                                <Link className="nav-link fw-bold" aria-current="page" to='/pokeapi'>PokeApi</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to='/jsonplaceholder'>JsonPlaceholder</Link>
+                                <Link className="nav-link fw-bold" to='/jsonplaceholder'>JsonPlaceholder</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to='/reqres'>Reqres.in</Link>
+                                <Link className="nav-link fw-bold" to='/reqres'>Reqres.in</Link>    
                             </li>
                         </ul>
                     </div>

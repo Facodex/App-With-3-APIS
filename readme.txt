@@ -1,0 +1,1 @@
+Para las solicitudes voy a usar componentes de carga de aqui https://react-bootstrap.github.io/components/spinners/
