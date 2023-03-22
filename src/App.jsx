@@ -5,6 +5,7 @@ import { Home } from './components/Home'
 import { JsonP } from './components/JsonP'
 import { Poke } from './components/Poke'
 import { Reqres } from './components/Reqres'
+import './App.css';
 
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
 
       <Header/>
 
-      <div className="container">
+      <div className="container h-100">
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/pokeapi' element={<Poke/>}/>
@@ -23,7 +24,7 @@ function App() {
         </Routes>
       </div>
 
-      <Footer/>
+      <Footer className='navbar navbar-fixed-bottom'/>
 
     </div>
   )
