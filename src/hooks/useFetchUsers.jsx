@@ -4,5 +4,3 @@ export const useFetchUsers = async (url, setState) => {
     setState(response.data);
     return response.data;
 };
-
-// export default useFetchUsers;
