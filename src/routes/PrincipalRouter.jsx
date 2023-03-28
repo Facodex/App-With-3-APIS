@@ -18,7 +18,7 @@ export const PrincipalRouter = () => {
             <Route path='/' element={<Home />} />
 
             <Route path='/pokeapi/*' element={<Poke />}>
-                <Route path='pokemon-main' element={<PokemonMain/>}/>
+                <Route path='' element={<PokemonMain/>}/>
                 <Route path='pokemons-list' element={<PokemonsList/>}/>
                 <Route path='abilities' element={<Abilities/>}/>
                 <Route path='locations' element={<Loactions/>}/>

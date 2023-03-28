@@ -1,5 +1,8 @@
 /* import some fonts  */
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+
 html {
   min-height: 100%;
   position: relative;
@@ -93,6 +96,51 @@ body {
 .divPokemonMain:hover{
   background-color: #94c0dd ;
 }
+
+/* POKEMONLIST COMPONENT  */
+.liPokemonItem{
+  list-style: none;
+  font-family: 'Rubik', sans-serif;
+}
+.liPokemonItem button{
+  background-color: transparent;
+  border: 0;
+  border-radius: 5px;
+}
+.liPokemonItem button:hover{
+  transition: all 0.3s;
+  font-weight: bold;
+}
+
+/* pokeLoader */
+#containerLoader{
+  width: 100px;
+  height: 100px;
+}
+
+@keyframes animation {
+  0% {
+    stroke-dasharray: 1 98;
+    stroke-dashoffset: -105;
+  }
+  50% {
+    stroke-dasharray: 80 10;
+    stroke-dashoffset: -160;
+  }
+  100% {
+    stroke-dasharray: 1 98;
+    stroke-dashoffset: -300;
+  }
+}
+
+#spinner {
+  transform-origin: center;
+  animation-name: animation;
+  animation-duration: 1.2s;
+  animation-timing-function: cubic-bezier;
+  animation-iteration-count: infinite;
+}
+
 /* footer component  */
 .footer {
   position: absolute;

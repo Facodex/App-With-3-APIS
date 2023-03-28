@@ -17,7 +17,7 @@ export const Header = () => {
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <NavLink className="nav-link fw-bold" aria-current="page" to='/pokeapi/pokemon-main'>PokeApi</NavLink>
+                                <NavLink className="nav-link fw-bold" aria-current="page" to='/pokeapi'>PokeApi</NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink className="nav-link fw-bold" to='/jsonplaceholder'>JsonPlaceholder</NavLink>
