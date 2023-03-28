@@ -1,7 +1,12 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 
 export const Poke = () => {
   return (
-    <div>Poke</div>
+    <div>
+
+      <Outlet/>
+
+    </div>
   )
 }

@@ -1,11 +1,15 @@
 import React from 'react'
-import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { Home } from '../components/Home';
 import { JsonP } from '../components/JsonP';
 import { Poke } from '../components/Poke';
 import { Reqres } from '../components/Reqres';
 import { PostsJsonP } from '../jsonplaceholder/PostsJsonP';
 import { UsersJsonP } from '../jsonplaceholder/UsersJsonP';
+import { Abilities } from '../pokeapi/Abilities';
+import { Loactions } from '../pokeapi/Loactions';
+import { PokemonMain } from '../pokeapi/PokemonMain';
+import { PokemonsList } from '../pokeapi/PokemonsList';
 
 export const PrincipalRouter = () => {
     return (
@@ -13,7 +17,12 @@ export const PrincipalRouter = () => {
 
             <Route path='/' element={<Home />} />
 
-            <Route path='/pokeapi' element={<Poke />} />
+            <Route path='/pokeapi/*' element={<Poke />}>
+                <Route path='pokemon-main' element={<PokemonMain/>}/>
+                <Route path='pokemons-list' element={<PokemonsList/>}/>
+                <Route path='abilities' element={<Abilities/>}/>
+                <Route path='locations' element={<Loactions/>}/>
+            </Route>
 
             <Route path='/reqres' element={<Reqres />} />
 

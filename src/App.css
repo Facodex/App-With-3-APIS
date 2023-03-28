@@ -22,6 +22,14 @@ body {
   border-bottom: 0.5px solid #8f8d8d;
 }
 
+.mainLogo{
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin { 
+  100% { transform: rotate(360deg); } 
+}
+
 /* home component  */
 .imgApiItem {
   height: 250px;
@@ -60,9 +68,31 @@ body {
 /* jsonP component  */
 .postBtnRadio{
   text-decoration: none;  
-  width: 100px !important;
+  font-weight: light;
+  font-size: 30px;
+  color: rgb(33, 195, 151);
+}
+.postBtnRadio:hover{
+  color: rgb(11, 119, 90);
+  transform: scale(1.1, 1.1);
+  text-decoration: underline;
+  transition: all 0.2s;
 }
 
+/* Poke component  */
+.linkPokemonMain{
+  text-decoration: none;
+}
+.h3PokemonMain{
+  text-decoration: none;
+}
+.divPokemonMain{
+  background-color: #AED6F1 ;
+  border-radius: 15px;
+}
+.divPokemonMain:hover{
+  background-color: #94c0dd ;
+}
 /* footer component  */
 .footer {
   position: absolute;
@@ -81,6 +111,16 @@ body {
   color: black;
   transition: all 0.5s;
 }
+
+.footerLinks{
+  text-decoration: none;  
+  font-weight: light;
+}
+.footerLinks:hover{
+  text-decoration: underline;
+  transition: all 0.2s;
+}
+
 
 /* media de home  */
 /* @include media-breakpoint-up(md) { */
