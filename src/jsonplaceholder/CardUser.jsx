@@ -9,8 +9,8 @@ function CardUser({user}) {
       <Card.Body>
         <Card.Title>{user.username} - {user.name}</Card.Title>
         <Card.Text>
-            <h3 className='fw-bold text-primary'>Company: {user.company.name}</h3>
-            <p>About: {user.company.catchPhrase}</p>
+            <span className='fw-bold text-primary'> Company: {user.company.name}</span> <br/>
+            <span> About: {user.company.catchPhrase}</span>
         </Card.Text>
       </Card.Body>
       <ListGroup className="list-group-flush">

@@ -6,7 +6,7 @@ export const JsonP = () => {
   
   return (
     <div>
-      <h2 className='text-primary text-center large rise title mt-5'>Welcome to JsonPlaceholder API!!</h2>
+      <h2 className='text-primary text-center mt-5'>Welcome to JsonPlaceholder API!!</h2>
       
       <div className="container w-100 d-flex justify-content-around mt-3">
         <NavLink to='/jsonplaceholder/users' className='postBtnRadio'>Usuarios</NavLink>

@@ -12,7 +12,7 @@ function CardPokemonData({ pokemonInfo, loadingItem }) {
                         <h3 className='text-center'>{pokemonInfo.name.toUpperCase()}</h3>
                         <Card.Title>Some moves:</Card.Title>
                         <Card.Text>
-                            {pokemonInfo.moves.slice(0, 10).map((move) => <span>{move}, </span>)}
+                            {pokemonInfo.moves.slice(0, 10).map((move) => <span key={move}>{move}, </span>)}
                             and more...
                         </Card.Text>
                     </Card.Body>
