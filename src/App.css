@@ -90,11 +90,11 @@ body {
   text-decoration: none;
 }
 .divPokemonMain{
-  background-color: #AED6F1 ;
+  background-color: #c7e2f5 ;
   border-radius: 15px;
 }
 .divPokemonMain:hover{
-  background-color: #94c0dd ;
+  background-color: #acd1eb ;
 }
 
 /* POKEMONLIST COMPONENT  */

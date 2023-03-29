@@ -6,7 +6,7 @@ export const useDataPokemon = async(pokemonName, setLoader, setState) => {
     const response = await request.json();
     const moves = response.moves.map((item) => item.move.name);
 
-    const clearPokemon = {
+    const cleanPokemon = {
         name: response.forms[0].name,
         moves: moves,
         image: response.sprites.other.dream_world.front_default,
@@ -14,7 +14,7 @@ export const useDataPokemon = async(pokemonName, setLoader, setState) => {
     
     setTimeout(() => {
         setLoader(false);
-        setState(clearPokemon);
+        setState(cleanPokemon);
     }, 1500);
     
 }

@@ -21,9 +21,8 @@ export const PokemonsList = () => {
 
       <div className="col-12 text-center">
         <h3 style={{fontFamily: 'Rubik'}}>POKEMON LIST</h3>
+        {loading && <LoaderData className='mx-auto'/>}
       </div>
-
-      {loading && <LoaderData/>}
 
       {pokemons &&
         <>
