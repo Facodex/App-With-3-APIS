@@ -118,6 +118,24 @@ body {
   height: 100px;
 }
 
+/* LOCATIONS FLOAT  */
+.locationItem{
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-8px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+/*animation spinner css  */
 @keyframes animation {
   0% {
     stroke-dasharray: 1 98;

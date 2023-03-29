@@ -3,6 +3,7 @@ import { ItemPokemonLink } from './ItemPokemonLink';
 import { useGetPokemons } from '../hooks/useGetPokemons';
 import { PokemonData } from './PokemonData';
 import { LoaderData } from './LoaderData';
+import { ButtonBack } from './ButtonBack';
 
 export const PokemonsList = () => {
   const [pokemons, setPokemons] = useState(null);
@@ -19,6 +20,8 @@ export const PokemonsList = () => {
   return (
     <div className='row d-flex justify-content-between py-3'>
 
+      <ButtonBack/>
+
       <div className="col-12 text-center">
         <h3 style={{fontFamily: 'Rubik'}}>POKEMON LIST</h3>
         {loading && <LoaderData className='mx-auto'/>}
@@ -26,7 +29,7 @@ export const PokemonsList = () => {
 
       {pokemons &&
         <>
-          <div className='col-6 py-5'>
+          <div className='col-md-6 py-5'>
             <ul className='d-flex flex-wrap'>
               {pokemons?.map((pokemon) =>
                 <ItemPokemonLink key={pokemon.name} pokemon={pokemon} setLoadingItem={setLoadingItem} setPokemonInfo={setPokemonInfo}/>
@@ -34,7 +37,7 @@ export const PokemonsList = () => {
             </ul>
           </div>
 
-          <div className='col-6 d-flex align-items-center justify-content-center py-5'>
+          <div className='col-md-6 d-flex align-items-center justify-content-center'>
             <PokemonData pokemonInfo={pokemonInfo} loadingItem={loadingItem} />
           </div>
         </>

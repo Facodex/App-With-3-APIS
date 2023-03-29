@@ -4,6 +4,7 @@ import { useGetPokemons } from '../hooks/useGetPokemons';
 import { PropagateLoader } from 'react-spinners';
 import { useGetAbilitie } from '../hooks/useGetAbilitie';
 import { CardAbilitie } from './CardAbilitie';
+import { ButtonBack } from './ButtonBack';
 
 export const Abilities = () => {
   const [abilities, setAbilities] = useState(null);
@@ -15,8 +16,8 @@ export const Abilities = () => {
   }, []);
 
   return (
-    <div className='row'>
-      
+    <div className='row pt-2'>
+      <ButtonBack/>
       <div className="col-12 d-flex justify-content-center align-items-center my-2">
         <img src={pikaAttack} alt="pikaAttack" style={{width:'150px'}}/>
         <h2 style={{fontFamily:'Rubik'}} className='mx-2'>Abilities and Attacks</h2>
